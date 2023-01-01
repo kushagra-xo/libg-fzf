@@ -12,7 +12,7 @@ else
 	source "$CONFIG_FILE"
 fi
 
-[ -z "$DOWNLOAD_LOCATION" ] || cd "$DOWNLOAD_LOCATION"
+[ -z "$DOWNLOAD_LOCATION" ] || [ -d "$DOWNLOAD_LOCATION" ] && cd "$DOWNLOAD_LOCATION"
 
 basic_help() {
 	printf "libg: Shell Script to scrape library genesis website and download books right from the terminal.\
