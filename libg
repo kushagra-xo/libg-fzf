@@ -15,8 +15,6 @@ fi
 
 [ -z "$DOWNLOAD_LOCATION" ] || cd "$DOWNLOAD_LOCATION"
 
-cd $DOWNLOAD_LOCATION
-
 basic_help() {
 	printf "libg: Shell Script to scrape library genesis website and download books right from the terminal.\
 	\nUSAGE: libg [OPTIONS] <search query>\
