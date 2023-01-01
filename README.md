@@ -18,6 +18,16 @@ OPTIONS        Description                               Allowed Values
 -r             Reverse/Desecending Order
 ```
 
+## Config file
+Edit `$HOME/.config/libg/libg.sh` to change default values:
+```
+DEFAULT_RESPERPAGE=100 # default number of search results per page (allowed values: 25, 50, 100)
+DEFAULT_DEPTH=1 # default number of result pages to scan (allowed values: any positive integer)
+LIBGEN_MIRROR="https://libgen.rs" # alternatives: *.is, *.rs, *.st	
+DOWNLOAD_LOCATION="" # default download location
+```
+*NOTE*: Giving any value except for 25, 50 or 100 for `DEFAULT_RESPERPAGE` will default it to 25.
+
 ## Installation
 Since it is just a small shell script, just download the script, give it executable permissions and place it in a directory that is in `PATH`. Also, you can change the default values for each option in the first few lines of the script.  
 ## Dependency
