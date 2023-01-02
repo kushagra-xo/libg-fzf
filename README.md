@@ -28,7 +28,7 @@ LIBGEN_MIRROR="https://libgen.rs" # alternatives: *.is, *.rs, *.st
 DOWNLOAD_LOCATION="" # default download location (if empty then books will be downloaded to current directory)
 ```
 
-*NOTE*: Giving any value except for 25, 50 or 100 for `DEFAULT_RESPERPAGE` will default it to 25.
+**Note**: Giving any value except for 25, 50 or 100 for `DEFAULT_RESPERPAGE` will default it to 25.
 
 ## Installation
 Since it is just a small shell script, just download the script, give it executable permissions and place it in a directory that is in `PATH`.
