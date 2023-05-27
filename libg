@@ -2,14 +2,14 @@
 
 CONFIG_FILE="$HOME"/.config/libg/libg.sh
 if [ -f "$CONFIG_FILE" ] ; then
-	source "$CONFIG_FILE"
+	. "$CONFIG_FILE"
 else 
 	mkdir -p "$HOME"/.config/libg > /dev/null
 	printf "DEFAULT_RESPERPAGE=100 # default number of search results per page (allowed values: 25, 50, 100)\
 	\nDEFAULT_DEPTH=1 # default number of result pages to scan (allowed values: any positive integer)\
 	\nLIBGEN_MIRROR=\"https://libgen.rs\" # alternatives: *.is, *.rs, *.st\
 	\nDOWNLOAD_LOCATION=\"\" # default download location (if empty then books will be downloaded to current directory)" > "$CONFIG_FILE"
-	source "$CONFIG_FILE"
+	. "$CONFIG_FILE"
 fi
 
 [ -z "$DOWNLOAD_LOCATION" ] || [ -d "$DOWNLOAD_LOCATION" ] && cd "$DOWNLOAD_LOCATION"
