@@ -1,10 +1,11 @@
 #!/bin/sh
 
-CONFIG_FILE="$HOME"/.config/libg/libg.sh
+CONFIG_DIR="$HOME/.config/libg"
+CONFIG_FILE="$CONFIG_DIR/libg.sh"
 if [ -f "$CONFIG_FILE" ] ; then
 	. "$CONFIG_FILE"
 else 
-	mkdir -p "$HOME"/.config/libg > /dev/null
+	mkdir -p "$CONFIG_DIR" > /dev/null
 	printf "DEFAULT_RESPERPAGE=100 # default number of search results per page (allowed values: 25, 50, 100)\
 	\nDEFAULT_DEPTH=1 # default number of result pages to scan (allowed values: any positive integer)\
 	\nLIBGEN_MIRROR=\"https://libgen.rs\" # alternatives: *.is, *.rs, *.st\
